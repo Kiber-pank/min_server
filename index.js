@@ -17,4 +17,4 @@ app
     res.render('pages/index', { message: "message" });
   })
 
-  .listen(8000, () => console.log(`Listening on 8000`))
+  .listen(process.env.PORT, () => console.log(`Listening on 8000`))
